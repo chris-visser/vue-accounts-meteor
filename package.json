@@ -1,7 +1,7 @@
 {
-  "name": "vue-accounts",
+  "name": "@vue-accounts/meteor",
   "version": "0.8.2",
-  "description": "A set of extendable Vue plugins and mixins to speed up building an accounts system",
+  "description": "Vue Accounts store addon for Meteor's account system",
   "license": "MIT",
   "main": "dist/.umd.js",
   "module": "dist/.esm.js",
@@ -16,9 +16,7 @@
     "build": "npm run build:unpkg & npm run build:es & npm run build:umd",
     "build:umd": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format umd --file dist/.umd.js",
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es --file dist/.esm.js",
-    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife --file dist/.min.js",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife --file dist/.min.js"
   },
   "dependencies": {},
   "devDependencies": {
